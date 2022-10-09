@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Slider</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="slider" class="page">
+	
+		<div class="slider-content">
+			<div class="slide" id="slide-1"> 
+			<video autoplay controls="controls" muted>
+				<source src="media/video-1.mp4" type="video/mp4"> 
+			</video>
+			</div>
+			<div class="slide" id="slide-1"> 
+				<img src="media/img-2.jpg" alt="">
+			</div>
+			<div class="slide" id="slide-1"> 
+				<img src="media/img-3.jpg" alt="">
+				<div class="slide-text">
+					<h1 class="slide-title"> Header</h1>
+					<div class="slide-desc">
+						<p>Description</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide" id="slide-1"> 
+				<video autoplay controls="controls" muted>
+					<source src="media/video-4.mp4" type="video/mp4"> 
+				</video>
+				<div class="slide-text">
+					<div class="slide-desc">
+						<p>Description</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide" id="slide-1"> 
+				<img src="media/img-5.jpg" alt="">
+				<div class="slide-text">
+					<h1 class="slide-title">Header</h1>
+				</div>
+			</div>	
+		</div>
+		<div class="buttons">
+
+			<div class="mute-buttons" onclick="unmute()">
+				<div class="button b-unmute" id="unmute-btn"><img src="img/b_mute.svg" alt=""></div>
+				<div class="button b-mute" id="mute-btn"><img src="img/b_unmute.svg" alt=""></div>
+			</div>
+
+			<div class="nav-buttons">
+				<div class="button b-left" id="prev-btn" onclick="prev()"><img src="img/b-left.svg" alt=""></div>
+				<div class="button b-right" id="next-btn" onclick="next()"><img src="img/b-right.svg" alt=""></div>
+			</div>
+		</div>
+	</div>
+		<script src="js/slider.js"></script>
+		<script>
+			
+			autoPlay();
+		</script>
+</body>
+</html>
